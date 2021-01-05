@@ -1,5 +1,5 @@
-## Modulo Admin Kanban Standard
+## Modulo Gestion Geografia Standard
 
-Modulo para el trabajo con el estandar de kanban, dominios, casos de uso y endpoints
+Modulo para el trabajo con la geografia, provincias y municipio del lado del server, dominios, casos de uso y endpoints
 
 ## Table of Contents
