@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author JesusHdezWaterloo@Github
  */
 public class ModuleGestionGeografiaRESTConstants {
-    
+
     //localhost:8080/geografia/provencia/{find_all,create}
     public static final String KANBAN_GENERAL_PATH = "/geografia";
 
@@ -33,7 +33,6 @@ public class ModuleGestionGeografiaRESTConstants {
 
     //public static final String COLUMNA_FIND_FIRST_PATH = "/first";
     //public static final RequestMethod COLUMNA_FIND_FIRST_METHOD = RequestMethod.GET;
-
     //-----------------------MUNICIPIO-----------------------\\
     public static final String MUNICIPIO_GENERAL_PATH = KANBAN_GENERAL_PATH + "/municipio";
 
