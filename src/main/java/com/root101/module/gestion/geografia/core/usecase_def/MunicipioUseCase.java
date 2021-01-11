@@ -18,6 +18,8 @@ package com.root101.module.gestion.geografia.core.usecase_def;
 
 import com.root101.clean.core.app.usecase.CRUDUseCase;
 import com.root101.module.gestion.geografia.core.domain.MunicipioDomain;
+import com.root101.module.gestion.geografia.core.domain.ProvinciaDomain;
+import java.util.List;
 
 /**
  *
@@ -26,4 +28,21 @@ import com.root101.module.gestion.geografia.core.domain.MunicipioDomain;
  */
 public interface MunicipioUseCase extends CRUDUseCase<MunicipioDomain> {
 
+    /**
+     * Dada una provincia, devuelve todos los municipios de esa provincia
+     *
+     * @param provincia
+     * @return
+     * @throws Exception
+     */
+    public List<MunicipioDomain> findByProvincia(ProvinciaDomain provincia) throws Exception;
+
+    /**
+     * Dada una provincia, devuelve todos los municipios de esa provincia
+     *
+     * @param idProvincia
+     * @return
+     * @throws Exception
+     */
+    public List<MunicipioDomain> findByProvincia(int idProvincia) throws Exception;
 }
