@@ -25,15 +25,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 public class ModuleGestionGeografiaRESTConstants {
 
-    //localhost:8080/geografia/provencia/{find_all,create}
+    public static final String PROVINCIA = "provincia";
+
+    //localhost:8080/geografia/provincia/{find_all,create}
     public static final String KANBAN_GENERAL_PATH = "/geografia";
 
     //-----------------------PROVINCIA-----------------------\\
     public static final String PROVINCIA_GENERAL_PATH = KANBAN_GENERAL_PATH + "/provincia";
 
-    //public static final String COLUMNA_FIND_FIRST_PATH = "/first";
-    //public static final RequestMethod COLUMNA_FIND_FIRST_METHOD = RequestMethod.GET;
     //-----------------------MUNICIPIO-----------------------\\
     public static final String MUNICIPIO_GENERAL_PATH = KANBAN_GENERAL_PATH + "/municipio";
+
+    public static final String MUNICIPIO_FIND_BY_PROV_PATH = "/find_by_prov/{" + PROVINCIA + "}";
+    public static final RequestMethod MUNICIPIO_FIND_BY_PROV_METHOD = RequestMethod.GET;
 
 }
