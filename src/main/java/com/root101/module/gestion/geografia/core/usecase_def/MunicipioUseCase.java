@@ -33,16 +33,16 @@ public interface MunicipioUseCase extends CRUDUseCase<MunicipioDomain> {
      *
      * @param provincia
      * @return
-     * @throws Exception
+     * @throws RuntimeException
      */
-    public List<MunicipioDomain> findByProvincia(ProvinciaDomain provincia) throws Exception;
+    public List<MunicipioDomain> findByProvincia(ProvinciaDomain provincia) throws RuntimeException;
 
     /**
      * Dada una provincia, devuelve todos los municipios de esa provincia
      *
      * @param idProvincia
      * @return
-     * @throws Exception
+     * @throws RuntimeException
      */
-    public List<MunicipioDomain> findByProvincia(int idProvincia) throws Exception;
+    public List<MunicipioDomain> findByProvincia(int idProvincia) throws RuntimeException;
 }
