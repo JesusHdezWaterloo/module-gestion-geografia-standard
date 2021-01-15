@@ -17,7 +17,11 @@
 package com.root101.module.gestion.geografia.core.domain;
 
 import com.root101.clean.core.utils.SortBy;
+import static com.root101.module.gestion.geografia.service.ResourceKeysStandard.*;
 import com.root101.utils.clean.EntityDomainObjectValidated;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  *
@@ -27,11 +31,15 @@ import com.root101.utils.clean.EntityDomainObjectValidated;
 public class MunicipioDomain extends EntityDomainObjectValidated {
 
     private Integer idMunicipio;
-
+    
+    @NotEmpty(message = VALIDATION_MUNICIPIO_NOMBRE_VACIO)
+    @Size(max = 95, message = VALIDATION_MUNICIPIO_NOMBRE_LARGO)
     private String nombreMunicipio;
 
+    @Size(max = 495, message = VALIDATION_DESCRIPCION_LARGA)
     private String descripcion;
 
+    @NotNull(message = VALIDATION_MUNICIPIO_PROVINCIA_NULL)
     private ProvinciaDomain provinciaFk;
 
     public MunicipioDomain() {

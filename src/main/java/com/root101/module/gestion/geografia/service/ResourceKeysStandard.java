@@ -23,6 +23,15 @@ package com.root101.module.gestion.geografia.service;
  */
 public class ResourceKeysStandard {
 
+    public static final String VALIDATION_MUNICIPIO_NOMBRE_VACIO = "#msg.module.gestion.geografia.municipio.validation.nombre_vacio#";
+    public static final String VALIDATION_MUNICIPIO_NOMBRE_LARGO = "#msg.module.gestion.geografia.municipio.validation.nombre_largo#";
+    public static final String VALIDATION_MUNICIPIO_PROVINCIA_NULL = "#msg.module.gestion.geografia.municipio.validation.provincia_null#";
+    
+    public static final String VALIDATION_PROVINCIA_NOMBRE_VACIO = "#msg.module.gestion.geografia.provincia.validation.nombre_vacio#";
+    public static final String VALIDATION_PROVINCIA_NOMBRE_LARGO = "#msg.module.gestion.geografia.provincia.validation.nombre_largo#";
+
+    public static final String VALIDATION_DESCRIPCION_LARGA = "#msg.module.gestion.geografia.validation.descripcion_larga#";
+
     public static final String RESOURCE_URL = "module_geografia";
 
 }
