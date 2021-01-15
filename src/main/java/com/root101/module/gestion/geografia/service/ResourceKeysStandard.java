@@ -21,6 +21,8 @@ package com.root101.module.gestion.geografia.service;
  * @author Root101 (jhernandezb96@gmail.com, +53-5-426-8660)
  * @author JesusHdezWaterloo@Github
  */
-public class ResourceKeys {
+public class ResourceKeysStandard {
+
+    public static final String RESOURCE_URL = "module_geografia";
 
 }
