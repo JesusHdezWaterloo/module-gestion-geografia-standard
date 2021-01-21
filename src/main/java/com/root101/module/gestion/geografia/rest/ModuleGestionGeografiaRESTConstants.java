@@ -28,13 +28,13 @@ public class ModuleGestionGeografiaRESTConstants {
     public static final String PROVINCIA = "provincia";
 
     //localhost:8080/geografia/provincia/{find_all,create}
-    public static final String KANBAN_GENERAL_PATH = "/geografia";
+    public static final String GEOGRAFIA_GENERAL_PATH = "/geografia";
 
     //-----------------------PROVINCIA-----------------------\\
-    public static final String PROVINCIA_GENERAL_PATH = KANBAN_GENERAL_PATH + "/provincia";
+    public static final String PROVINCIA_GENERAL_PATH = GEOGRAFIA_GENERAL_PATH + "/provincia";
 
     //-----------------------MUNICIPIO-----------------------\\
-    public static final String MUNICIPIO_GENERAL_PATH = KANBAN_GENERAL_PATH + "/municipio";
+    public static final String MUNICIPIO_GENERAL_PATH = GEOGRAFIA_GENERAL_PATH + "/municipio";
 
     public static final String MUNICIPIO_FIND_BY_PROV_PATH = "/find_by_prov/{" + PROVINCIA + "}";
     public static final RequestMethod MUNICIPIO_FIND_BY_PROV_METHOD = RequestMethod.GET;
